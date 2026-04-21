@@ -117,7 +117,6 @@ app/src/main/java/com/hk/vcab/
 
 **Harsh Kumar**  
 *B.Tech CSE (AI & ML)*  
-Portfolio: [harsh0904k.github.io](https://harsh0904k.github.io/vcab-legal/about.html)
 
 ---
 *Note: Cabika is more than just an app; it's a scalable solution for campus mobility challenges.*
