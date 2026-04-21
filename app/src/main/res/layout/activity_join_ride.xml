@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <!-- Form container -->
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_card"
+        android:elevation="4dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter number of passengers"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassengers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of passengers"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@drawable/edittext_rounded"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/buttonJoinRide"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Join Ride"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange_700"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"/>
+
+        <!-- Warning Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Join only if your ride is confirmed. Leaving later may create problems for your co-travelers."
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:paddingBottom="12dp"
+            android:lineSpacingExtra="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Lottie Loading Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieLoading"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

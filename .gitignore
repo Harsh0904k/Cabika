@@ -1,0 +1,30 @@
+# Android and Gradle
+.gradle/
+build/
+app/build/
+*.iml
+.idea/
+.kotlin/
+*.log
+
+# Sensitive API and Project Keys
+app/google-services.json
+local.properties
+
+# Gradle Wrapper
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+# External Native Build
+.externalNativeBuild
+.cxx
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Captures and analysis
+/captures
+/hs_err_pid*
+node_modules/

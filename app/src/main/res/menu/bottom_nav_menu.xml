@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/servicesFragment"
+        android:title="Matched Ride"
+        android:icon="@drawable/ic_services" />
+
+    <item
+        android:id="@+id/activityFragment"
+        android:title="Activity"
+        android:icon="@drawable/ic_activity" />
+
+    <item
+        android:id="@+id/accountFragment"
+        android:title="Account"
+        android:icon="@drawable/ic_account" />
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvBookingName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvBookingPickupDrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pickup → Drop"/>
+
+    <TextView
+        android:id="@+id/tvBookingDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date and Time"/>
+
+    <TextView
+        android:id="@+id/tvBookingPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passengers"/>
+
+    <TextView
+        android:id="@+id/tvDriverRequired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Required"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        android:textStyle="bold"/>
+
+    <!-- Visibility toggle button -->
+    <Button
+        android:id="@+id/btnToggleVisibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"/>
+</LinearLayout>

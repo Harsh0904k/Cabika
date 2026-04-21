@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rideItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/card_background"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:elevation="4dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/myRideDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ride Details"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tvDriverBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:background="@drawable/green_badge_bg"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:text="Driver Assigned"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/rideTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Extra Info or User List"
+        android:textSize="14sp"
+        android:textColor="@color/gray_700"
+        android:paddingBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/viewDetailsButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="View Details"
+            android:textAllCaps="false"
+            android:textColor="#FF6F00"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="16dp"
+            app:strokeColor="@color/orange_700"
+            app:strokeWidth="2dp"
+            app:backgroundTint="#FFF3E0"
+            android:layout_marginEnd="8dp"
+            android:elevation="0dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLeaveRide"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Leave Ride"
+            android:textAllCaps="false"
+            android:textColor="#640000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="16dp"
+            app:strokeColor="#640000"
+            app:strokeWidth="2dp"
+            app:backgroundTint="#FF4D4D"
+            android:layout_marginEnd="8dp"
+            android:elevation="0dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+</LinearLayout>

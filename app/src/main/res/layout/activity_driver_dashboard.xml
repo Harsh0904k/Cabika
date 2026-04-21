@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvDriverDashboardTitle"
+            android:text="Driver Dashboard"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange_700"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Available Rides Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAvailableRides"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Available Rides"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#009906"
+            android:elevation="4dp"/>
+
+        <!-- My Accepted Ride Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMyAcceptedRide"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="My Accepted Ride"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#1E88E5"
+            android:elevation="4dp"/>
+
+        <!-- All Rides Button (New) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMyRides"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="All rides"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#1E88E5"
+            android:elevation="4dp"/>
+
+        <!-- Past Rides Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPastRides"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Past Rides"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#3E3426"
+            android:elevation="4dp"/>
+
+        <!-- Logout Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="16dp"
+            app:backgroundTint="#D32F2F"
+            android:elevation="4dp"/>
+    </LinearLayout>
+</ScrollView>

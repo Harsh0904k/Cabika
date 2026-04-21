@@ -1,0 +1,78 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F9">
+
+    <!-- Main content layout -->
+    <LinearLayout
+        android:id="@+id/mainContentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="72dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/myRidesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Rides"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/orange_700"
+        android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvNoRides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No rides available"
+            android:textSize="18sp"
+            android:textColor="#666"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/myRidesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"/>
+</LinearLayout>
+
+    <!-- Loading animation overlay -->
+<com.airbnb.lottie.LottieAnimationView
+android:id="@+id/loadingAnimation"
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:layout_gravity="center"
+android:visibility="gone"
+app:lottie_rawRes="@raw/loading"
+app:lottie_loop="true"
+app:lottie_autoPlay="false" />
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/nav_background"
+        android:fitsSystemWindows="true"
+        app:itemIconSize="28dp"
+        app:itemIconTint="@color/selector_nav_item_color"
+        app:itemTextColor="@color/selector_nav_item_color"
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled"
+        app:backgroundTint="@null" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
